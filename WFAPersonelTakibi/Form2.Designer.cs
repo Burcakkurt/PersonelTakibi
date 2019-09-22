@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.dgvEmployees = new System.Windows.Forms.DataGridView();
             this.cmsMenu = new MetroFramework.Controls.MetroContextMenu(this.components);
+            this.tsmDetay = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmDuzenle = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmSil = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmYeni = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmDetay = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
             this.cmsMenu.SuspendLayout();
             this.SuspendLayout();
@@ -59,31 +59,39 @@
             this.tsmYeni,
             this.tsmDetay});
             this.cmsMenu.Name = "metroContextMenu1";
-            this.cmsMenu.Size = new System.Drawing.Size(126, 92);
-            // 
-            // tsmDuzenle
-            // 
-            this.tsmDuzenle.Name = "tsmDuzenle";
-            this.tsmDuzenle.Size = new System.Drawing.Size(125, 22);
-            this.tsmDuzenle.Text = "Düzenle";
-            // 
-            // tsmSil
-            // 
-            this.tsmSil.Name = "tsmSil";
-            this.tsmSil.Size = new System.Drawing.Size(125, 22);
-            this.tsmSil.Text = "Sil";
-            // 
-            // tsmYeni
-            // 
-            this.tsmYeni.Name = "tsmYeni";
-            this.tsmYeni.Size = new System.Drawing.Size(125, 22);
-            this.tsmYeni.Text = "Yeni Kayıt";
+            this.cmsMenu.Size = new System.Drawing.Size(181, 114);
             // 
             // tsmDetay
             // 
+            this.tsmDetay.Image = global::WFAPersonelTakibi.Properties.Resources.circle_more_detail_512;
             this.tsmDetay.Name = "tsmDetay";
-            this.tsmDetay.Size = new System.Drawing.Size(125, 22);
+            this.tsmDetay.Size = new System.Drawing.Size(180, 22);
             this.tsmDetay.Text = "Detay";
+            this.tsmDetay.Click += new System.EventHandler(this.TsmDetay_Click);
+            // 
+            // tsmDuzenle
+            // 
+            this.tsmDuzenle.Image = global::WFAPersonelTakibi.Properties.Resources.iconfinder_new_24_103173;
+            this.tsmDuzenle.Name = "tsmDuzenle";
+            this.tsmDuzenle.Size = new System.Drawing.Size(180, 22);
+            this.tsmDuzenle.Text = "Düzenle";
+            this.tsmDuzenle.Click += new System.EventHandler(this.TsmDuzenle_Click);
+            // 
+            // tsmSil
+            // 
+            this.tsmSil.Image = global::WFAPersonelTakibi.Properties.Resources._16_editorial___trash_can_512;
+            this.tsmSil.Name = "tsmSil";
+            this.tsmSil.Size = new System.Drawing.Size(180, 22);
+            this.tsmSil.Text = "Sil";
+            this.tsmSil.Click += new System.EventHandler(this.TsmSil_Click);
+            // 
+            // tsmYeni
+            // 
+            this.tsmYeni.Image = global::WFAPersonelTakibi.Properties.Resources.iconfinder_plus_24_103172;
+            this.tsmYeni.Name = "tsmYeni";
+            this.tsmYeni.Size = new System.Drawing.Size(125, 22);
+            this.tsmYeni.Text = "Yeni Kayıt";
+            this.tsmYeni.Click += new System.EventHandler(this.TsmYeni_Click);
             // 
             // Form2
             // 
